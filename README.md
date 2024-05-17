@@ -2,9 +2,6 @@
 
 A simple, interactive bar chart built with D3.js that visualizes GDP (Gross Domestic Product) data over time.
 
-![GDP Bar Chart](screenshot.png)
-*To add your screenshot: Take a screenshot of your working chart and save it as 'screenshot.png' in your project directory*
-
 ## Features
 - Interactive bar chart with hover effects
 - Tooltip showing detailed GDP information
