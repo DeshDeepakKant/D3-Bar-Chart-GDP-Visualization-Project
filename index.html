@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India GDP Analysis | Modern Visualization</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Add custom font icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="gradient-bg"></div>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="ri-line-chart-fill"></i>
+                <span>GDP Analytics</span>
+            </div>
+            <nav class="theme-toggle">
+                <button id="theme-switch">
+                    <i class="ri-contrast-2-fill"></i>
+                </button>
+            </nav>
+        </header>
+        
+        <div class="chart-container">
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <h3>Current GDP</h3>
+                    <p id="current-gdp">Loading...</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Growth Rate</h3>
+                    <p id="growth-rate">Loading...</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Global Rank</h3>
+                    <p id="global-rank">Loading...</p>
+                </div>
+            </div>
+
+            <div class="chart-wrapper glassmorphism">
+                <div id="loading" class="loading">
+                    <div class="loader"></div>
+                    <p>Analyzing Economic Data</p>
+                </div>
+                <div id="error" class="error"></div>
+                <div id="chart-container"></div>
+            </div>
+
+            <div class="chart-controls">
+                <button class="control-btn" data-range="5y">5Y</button>
+                <button class="control-btn" data-range="10y">10Y</button>
+                <button class="control-btn active" data-range="all">All</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
